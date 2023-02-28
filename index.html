@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== LINK TO CSS ========================-->
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <title>Special Man Sign Up Form</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#form">Login</a>
+      </header>
+      <main>
+        <div class="container container--1">
+          <img src="./Assets/Image/background.png" alt="Background Image" />
+        </div>
+
+        <div class="container container--2">
+          <form id="form" action="/">
+            <h1>Create Account</h1>
+            <div class="input-control">
+              <label for="fname">First Name</label>
+              <input
+                id="fname"
+                name="fname"
+                type="text"
+                placeholder="Enter First Name"
+              />
+              <img
+              class="icon icon--1"
+              src="./Assets/Image/fname.png"
+              alt="first Name Icon"
+            />
+              <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <label for="lname">Last Name</label>
+              <input
+                id="lname"
+                name="lname"
+                type="text"
+                placeholder="Enter Last Name"
+              />
+
+              <img
+              class="icon"
+              src="./Assets/Image/lname.png"
+              alt="Last Name Icon"
+            />
+              <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <label for="phone">Phone Number</label>
+              <input
+                id="phone"
+                name="phone"
+                type="number"
+                placeholder="Enter Phone"
+              />
+              <img
+              class="icon"
+              src="./Assets/Image/phone.png"
+              alt="Phone Number Icon"
+            />
+              <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Enter Email Address"
+              />
+              <img
+              class="icon"
+              src="./Assets/Image/email.png"
+              alt="Email icon"
+            />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Enter Password"
+              />
+              <div class="error"></div>
+            </div>
+
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </main>
+    </section>
+    <!--==================== LINK TO JAVASCRIPT ========================-->
+    <script src="./Assets/JavaScript/main.js"></script>
+  </body>
+</html>
