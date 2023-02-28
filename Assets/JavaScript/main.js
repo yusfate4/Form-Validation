@@ -5,11 +5,16 @@ const phoneNumber = document.getElementById("phone");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 
+
+// ======================= CLICK BUTTON ==============================
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   validateInputs();
 });
+
+
+// ======================= ERROR DISPLAY ==============================
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
@@ -20,6 +25,9 @@ const setError = (element, message) => {
   inputControl.classList.remove("success");
 };
 
+
+// ======================= SUCCESS DISPLAY ==============================
+
 const setSuccess = (element) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector(".error");
@@ -29,11 +37,8 @@ const setSuccess = (element) => {
   inputControl.classList.remove("error");
 };
 
-const isValidEmail = (email) => {
-  const re =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-};
+
+// ======================= INPUT VALIDATION ==============================
 
 const validateInputs = () => {
   const firstNameValue = firstName.value.trim();

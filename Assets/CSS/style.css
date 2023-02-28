@@ -132,22 +132,20 @@ form .icon {
   margin: 3px;
 }
 
-@media only screen and (max-width: 1200px) {
-  /*Tablets [601px -> 1200px]*/
 
+
+
+
+
+/*===================== Media Query =======================*/
+
+  /*Tablets [601px -> 1200px]*/
+@media only screen and (max-width: 1200px) {
   header {
     max-width: 100%;
     text-align: left;
   }
 
-  /* #form{
-    border: 3px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto 0;
-  } */
   .container--1 img {
     width: 100%;
     /* height: 530px; */
@@ -160,6 +158,8 @@ form .icon {
   }
 }
 
+
+  /*Big smartphones [426px -> 600px]*/
 @media only screen and (max-width: 600px) {
   .container--2 form {
     width: 100%;
@@ -180,11 +180,12 @@ form .icon {
     right: 45px;
     margin-top: 30px;
   }
-  /*Big smartphones [426px -> 600px]*/
 }
 
-@media only screen and (max-width: 425px) {
+
+
   /*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 425px) {
   .container--2 h1 {
     width: 100%;
     font-size: 18px;
